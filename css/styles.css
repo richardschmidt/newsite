@@ -1,0 +1,201 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.orbit-content {
+	background-color: #3EA4D0;
+}
+
+.item-wrapper {
+  padding: 20px;
+  border: 2px solid #efefef;
+  border-radius: 7px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.item-wrapper:hover .img-wrapper img {
+  -webkit-filter: grayscale(0);
+}
+.item-wrapper:hover .img-wrapper .click-to-learn {
+  bottom: 0;
+}
+
+.img-wrapper {
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.img-wrapper .click-to-learn {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-color: #333;
+  padding: 16px 8px;
+  bottom: -50px;
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  margin: 0 auto;
+  border: none;
+  box-shadow: none;
+}
+.img-wrapper .click-to-learn:hover {
+  background-color: #008cba;
+}
+.img-wrapper img {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-filter: grayscale(1);
+  width: 100%;
+}
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(51, 51, 51, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+.full-width {
+  max-width: 1400px;
+}
+
+.footer {
+  background-color: #2980b9;
+  padding: 2rem 4rem;
+  text-align: center;
+  color: #fff;
+}
+.footer i {
+  font-size: 100px;
+}
+
+.footer h4 {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  margin-bottom: 10px;
+}
+.footer p, .footer a {
+  font-weight: 300;
+  font-size: .8em;
+  color: #fff;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .footer .columns:nth-child(n+2) {
+    border-left: 1px solid #b3b3b3;
+    min-height: 280px;
+  }
+}
+.footer-links {
+  list-style-type: none;
+}
+.footer-links li {
+  margin-top: .5em;
+}
+
+.reveal-modal {
+	position: fixed;
+	background-color: #2980B9;
+}
+
+.reveal-modal a {
+	color: #fff;
+}
+
+.reveal-modal a:hover {
+	color: #333;
+}
+
+#bg {
+	background-image: url("images/yeti-foundation.jpg");
+}
+
+#bg-grn {
+	background-color: #6BCFA4;
+}
+
+#bg-blue {
+	background-color: #3EA4D0;
+}
+
+#inline-logos {
+	font-size: 24px;
+}
+
+#navtitle {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#center {
+	text-align: center;
+}
+
+#center-white {
+	text-align: center;
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#white {
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#giant {
+	color: #fff;
+	font-size: 120px;
+}
+
+#giant1 {
+	color: #fff;
+	font-size: 72px;
+}
